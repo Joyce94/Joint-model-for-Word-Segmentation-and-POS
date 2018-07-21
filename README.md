@@ -7,11 +7,15 @@
 	* numpy
 
 ## Performance  Result
-	|Fscore|environment|seg|pos|
-	| ------|------|------- |------- |
-	|paper|C++|96.36|92.51|
-	|my_version_nobatch|pytorch|96.46|92.41|
-	|my_version_batch|pytorch|96.34|92.21|
+-----------------------
+
+|Fscore|environment|seg|pos|
+| ------|------|------- |------- |
+|paper|C++|96.36|92.51|
+|my_version_nobatch|pytorch|96.46|92.41|
+|my_version_batch|pytorch|96.34|92.21|
+
+-----------------------
 
 ## Data
 	CTB6.0
