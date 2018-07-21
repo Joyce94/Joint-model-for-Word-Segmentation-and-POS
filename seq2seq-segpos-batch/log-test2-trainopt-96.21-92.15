@@ -1,0 +1,157 @@
+nohup: ignoring input
+Loaded config file sucessfully.
+pretrained_wordemb_file 
+pretrained_charemb_file /data/disk1/public/Embedding/ctb/ctb60_emb/ctb60.char.words
+pretrained_bicharemb_file /data/disk1/public/Embedding/ctb/ctb60_emb/ctb60.bichar.words
+data_dir /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/ctb60_pos
+train_file /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/ctb60_pos/train.ctb60.pos.hwc
+dev_file /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/ctb60_pos/dev.ctb60.pos.hwc
+test_file /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/ctb60_pos/test.ctb60.pos.hwc
+shrink_feature_thresholds 1
+run_insts -1
+save_dir /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model
+config_file /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model/config.cfg
+save_encode_path /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model/encode
+save_decode_path /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model/decode
+load_dir /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model
+load_encode_path /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model/encode
+load_decode_path /data/disk1/song/CWS/seq2seq-segpos-complete-new-batch/examples/model/decode
+lstm_layers 1
+word_dims 300
+char_dims 200
+bichar_dims 200
+wordlen_dims 20
+char_type_dims 20
+pos_dims 100
+linear_hiddens 200
+lstm_hiddens 200
+dropout_emb 0.25
+dropout_lstm 0.25
+learning_rate 0.001
+decay 1e-8
+clip_grad 10
+thread_nums 1
+maxiters 1000
+train_batch_size 16
+test_batch_size 16
+validate_every 10
+save_after 0
+update_every 1
+test getting train_insts time:  14.667374849319458
+test getting dev_insts time:  15.874605178833008
+test getting test_insts time:  18.069544553756714
+The dim of pretrained embedding is 200
+
+Embedding:
+  pretrain word:9351, alphabet word:4380, prefect match:4367, case match:0, oov:13, oov%:0.0029680365296803654
+The dim of pretrained embedding is 200
+
+Embedding:
+  pretrain word:4405139, alphabet word:234191, prefect match:228239, case match:4, oov:5948, oov%:0.025398072513461236
+test building model time:  586.9255909919739
+training...
+
+epoch is 0, average loss is nan 
+the 0 epoch training costs time: 932.0403747558594 s 
+
+Dev...
+
+(The total number of dataset: 2078)
+
+Evalution
+   SEG - precision: 96.1650% recall: 96.1104% f1_score: 96.1377 (57598/59895/59929)
+   POS - precision: 91.0376% recall: 90.9860% f1_score: 91.0118 (54527/59895/59929)
+the 0 epoch dev costs time: 38.047768115997314 s
+
+Test...
+
+(The total number of dataset: 2795)
+
+Evalution
+   SEG - precision: 95.7957% recall: 95.4657% f1_score: 95.6304 (77880/81298/81579)
+   POS - precision: 90.7685% recall: 90.4559% f1_score: 90.6119 (73793/81298/81579)
+the 0 epoch testing costs time: 48.243109464645386 s
+now, test fscore of seg is 0.9563044505976903, test fscore of pos is 0.9061193415890519, best test fscore of seg is 0.9563044505976903, best fscore of pos is 0.9061193415890519 
+now, dev fscore of seg is 0.9613766858058487, dev fscore of pos is 0.9101181733208705, best dev fscore of seg is 0.9613766858058487, best dev fscore of pos is 0.9101181733208705, best test fscore of seg is 0.9563044505976903, best test fscore of pos is 0.9061193415890519
+
+epoch is 1, average loss is nan 
+the 1 epoch training costs time: 1022.6354479789734 s 
+
+Dev...
+
+(The total number of dataset: 2078)
+
+Evalution
+   SEG - precision: 96.4659% recall: 96.4692% f1_score: 96.4675 (57813/59931/59929)
+   POS - precision: 91.9107% recall: 91.9138% f1_score: 91.9122 (55083/59931/59929)
+the 1 epoch dev costs time: 38.95988965034485 s
+
+Test...
+
+(The total number of dataset: 2795)
+
+Evalution
+   SEG - precision: 96.0980% recall: 95.8813% f1_score: 95.9895 (78219/81395/81579)
+   POS - precision: 91.5388% recall: 91.3323% f1_score: 91.4354 (74508/81395/81579)
+the 1 epoch testing costs time: 50.23166465759277 s
+now, test fscore of seg is 0.9598954434449667, test fscore of pos is 0.9143544369040462, best test fscore of seg is 0.9598954434449667, best fscore of pos is 0.9143544369040462 
+now, dev fscore of seg is 0.9646754546971468, dev fscore of pos is 0.9191223093609211, best dev fscore of seg is 0.9646754546971468, best dev fscore of pos is 0.9191223093609211, best test fscore of seg is 0.9598954434449667, best test fscore of pos is 0.9143544369040462
+
+epoch is 2, average loss is nan 
+the 2 epoch training costs time: 1031.6653649806976 s 
+
+Dev...
+
+(The total number of dataset: 2078)
+
+Evalution
+   SEG - precision: 96.5857% recall: 96.6727% f1_score: 96.6292 (57935/59983/59929)
+   POS - precision: 92.2161% recall: 92.2992% f1_score: 92.2577 (55314/59983/59929)
+the 2 epoch dev costs time: 40.61810922622681 s
+
+Test...
+
+(The total number of dataset: 2795)
+
+Evalution
+   SEG - precision: 96.1668% recall: 95.9487% f1_score: 96.0576 (78274/81394/81579)
+   POS - precision: 91.9159% recall: 91.7074% f1_score: 91.8115 (74814/81394/81579)
+the 2 epoch testing costs time: 50.494948387145996 s
+now, test fscore of seg is 0.9605762917783928, test fscore of pos is 0.9181152706276499, best test fscore of seg is 0.9605762917783928, best fscore of pos is 0.9181152706276499 
+now, dev fscore of seg is 0.966291947428114, dev fscore of pos is 0.9225765561411703, best dev fscore of seg is 0.966291947428114, best dev fscore of pos is 0.9225765561411703, best test fscore of seg is 0.9605762917783928, best test fscore of pos is 0.9181152706276499
+
+epoch is 3, average loss is nan 
+the 3 epoch training costs time: 864.4544534683228 s 
+
+Dev...
+
+(The total number of dataset: 2078)
+
+Evalution
+   SEG - precision: 96.7421% recall: 96.7195% f1_score: 96.7307 (57963/59915/59929)
+   POS - precision: 92.7314% recall: 92.7097% f1_score: 92.7205 (55560/59915/59929)
+the 3 epoch dev costs time: 39.408393144607544 s
+
+Test...
+
+(The total number of dataset: 2795)
+
+Evalution
+   SEG - precision: 96.3670% recall: 96.0492% f1_score: 96.2078 (78356/81310/81579)
+   POS - precision: 92.3060% recall: 92.0016% f1_score: 92.1536 (75054/81310/81579)
+the 3 epoch testing costs time: 50.5361270904541 s
+now, test fscore of seg is 0.9620784706149587, test fscore of pos is 0.9215355241913205, best test fscore of seg is 0.9620784706149587, best fscore of pos is 0.9215355241913205 
+now, dev fscore of seg is 0.9673074997496746, dev fscore of pos is 0.9272053669770701, best dev fscore of seg is 0.9673074997496746, best dev fscore of pos is 0.9272053669770701, best test fscore of seg is 0.9620784706149587, best test fscore of pos is 0.9215355241913205
+
+epoch is 4, average loss is nan 
+the 4 epoch training costs time: 840.3073561191559 s 
+
+Dev...
+
+(The total number of dataset: 2078)
+
+Evalution
+   SEG - precision: 96.5961% recall: 96.7428% f1_score: 96.6694 (57977/60020/59929)
+   POS - precision: 92.5558% recall: 92.6964% f1_score: 92.6260 (55552/60020/59929)
+the 4 epoch dev costs time: 40.19210910797119 s
+now, dev fscore of seg is 0.9666941783591358, dev fscore of pos is 0.9262603273057717, best dev fscore of seg is 0.9673074997496746, best dev fscore of pos is 0.9272053669770701, best test fscore of seg is 0.9620784706149587, best test fscore of pos is 0.9215355241913205
