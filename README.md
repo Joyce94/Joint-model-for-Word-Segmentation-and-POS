@@ -3,7 +3,7 @@ this is an implementation for the paper:"A Simple and Effective Neural Model for
 
 ## Requirement
 	* python 3
-	* pytorch > 0.3.1
+	* pytorch 0.3.1
 	* numpy
 
 ## Performance  Result
